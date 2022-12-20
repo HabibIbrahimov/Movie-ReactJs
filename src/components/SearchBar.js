@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class SearchBar extends React.Component {
   handleFormSubmit = (event) => {
     event.preventDefault();
@@ -9,15 +10,18 @@ class SearchBar extends React.Component {
     return (
       <form onSubmit={this.handleFormSubmit}>
         <div className="form-row mb-5">
-          <div className="col-12">
+          <div className="col-10">
             <input
               onChange={this.props.searchMovieProp}
               type="text"
               className="form-control"
-              placeholder="Seach a movie"
-            />
+              placeholder="Seach a movie"/>
+          </div>
+          <div className="col-2">
+           
           </div>
         </div>
+       
       </form>
     );
   }
